@@ -1,0 +1,18 @@
+# A=[2,1]      B=[7]     X=[x]
+#   [3,-5]       [4]       [y]  solve for x,y
+
+import numpy as np
+from numpy import linalg as la
+x=0
+y=0
+
+a=np.array([[1,1,2],[2,3,6],[3,6,10]])
+b=np.array([4,10,17])
+# C=np.array([x,y,z])
+a_inv= la.inv(a)
+print(la.solve(a,b))
+c=a_inv@b
+print("x,y and z  are:\n",c)
+print("x=", c[0])
+print("y= ", c[1])
+print("z= ", c[2])
