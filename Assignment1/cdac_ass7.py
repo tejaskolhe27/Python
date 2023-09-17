@@ -1,6 +1,4 @@
 unit=int(input("Enter the unit of electricity:"))
-
-
 if unit<=100:
     bill=0
     print("The bill is: ", bill)

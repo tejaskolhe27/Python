@@ -7,8 +7,7 @@ def print_calendar(Total, starting):
         if (day + starting) % 7 == 0:
             print()
         day += 1
-
-    print()
+    
 Total = int(input("Enter the number of days in the month: "))
 starting = int(input(
 """

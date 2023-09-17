@@ -5,9 +5,9 @@ for val in zip(lst,lst1):
     print(val)
 
 for x,y in zip(lst,lst1):
-    print(x,"---",y)
+    print(x,"----",y)
 
-print("*"*50,"enamurate","*"*50)
+print("*"*25,"enamurate","*"*25)
 for pos,val in enumerate(lst):
     if val%2==0:
         print(pos,"----",val)
