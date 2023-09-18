@@ -7,11 +7,18 @@ def addnewcourse():
     courselist.append((new,cap))
     return True
 
-# def deletecourse():
-#     delete=int(input("Enter course to delete: "))
-#     for i in courselist:
-#         if delete==courselist[i]
-
+def deletecourse(dcourse):
+    pos,cdetails=searchbycname(dcourse)
+    if pos!=-1:
+        ans=input("do you want to delete the course: ")
+        if ans=="y":
+            courselist.pop(pos)
+            #courselst.remove(cdetails)
+            return 1
+        else:
+            return 2
+    else:
+        return 3
 
 
 def searchbycname(old):
@@ -83,7 +90,14 @@ while choice!=7:
             print("New course not added")
 
     elif choice==2:
-        pass
+        dcourse=input("enetr course name for deletion: ")
+        status=deletecourse(dcourse)
+        if status==1:
+            print("found and deletion done")
+        elif status==2:
+            print("found and not deleted")
+        else:
+            print("not found")
 
     elif choice ==3:
         cname=input("Enter course name to modify capacity: ")
