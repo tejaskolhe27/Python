@@ -1,4 +1,3 @@
-import string
 def pangram(str):
     alphabet='abcdefghijklmnopqrstuvwxyz'
     for char in alphabet:
@@ -6,8 +5,6 @@ def pangram(str):
             return False
  
     return True
-
-
 
 s=input("Enter a sentence to check pangram: \n")
 if pangram(s)==True:

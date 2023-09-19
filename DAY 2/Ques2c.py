@@ -7,4 +7,6 @@ while(i>=0):
   i=i-1
   j=j+1
   if(i<0 and j>=4):
-   break 
+   break
+print("*"*50)
+
