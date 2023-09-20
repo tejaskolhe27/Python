@@ -1,10 +1,5 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Created on Mon Sep 18 17:45:14 2023
-
-@author: dai
-"""
 
 def f(a=23,b=2,c=3,*tup,**kwarg):
     print(a)
