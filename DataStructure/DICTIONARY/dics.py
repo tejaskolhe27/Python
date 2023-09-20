@@ -1,6 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-
 def f(a=23,b=2,c=3,*tup,**kwarg):
     print(a)
     print(b)

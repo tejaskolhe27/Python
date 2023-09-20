@@ -8,3 +8,5 @@ def mix_string(s1, s2):
 s1=input("Enter string 1: ")
 s2=input("Enter string 2: ")
 mix_string(s1,s2)
+
+

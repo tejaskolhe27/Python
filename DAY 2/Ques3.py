@@ -1,9 +1,3 @@
-# import math
-# n1=int(input("Enter 1st number: "))
-# n2=int(input("Enter 2nd number: "))
-# gcd = math.gcd(n1,n2)
-# print(gcd)
-
 def hcf(n1,n2):
     hcf=0
     if n1>n2:
