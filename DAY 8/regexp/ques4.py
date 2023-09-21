@@ -17,7 +17,7 @@ else:
 
 for i in range(3):
     password=input("Enter password: ")
-    n=re.match("^\w+\W",password,re.I|re.M)
+    n=re.match("[A-Za-z][\W{1,}A-Za-z]{7}$",password,re.I|re.M)
     
     if n!=None:
         print("Password Valid")
