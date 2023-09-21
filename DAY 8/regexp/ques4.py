@@ -12,20 +12,18 @@ username=input("Enter username: ")
 m=re.match("\w+|\d+",username,re.I|re.M)
 if m!=None:
     print("Username valid")
+    for i in range(3):
+        password=input("Enter password: ")
+        n=re.match("[A-Za-z][\W{1,}A-Za-z\w]{7}$",password,re.I|re.M)
+        
+        if n!=None:
+            print("Password Valid")
+            print("Welcome to our application")
+            break
+        
+        else:
+            print("Invalid")
+            print(f"You have {2-i} attempts remaining")
+
 else:
     print("Username not valid")
-
-for i in range(3):
-    password=input("Enter password: ")
-    n=re.match("[A-Za-z][\W{1,}A-Za-z]{7}$",password,re.I|re.M)
-    
-    if n!=None:
-        print("Password Valid")
-        print("Welcome to our application")
-        break
-    
-    else:
-        print("Invalid")
-        print(f"You have {2-i} attempts remaining")
-
-#INCOMPLETE
