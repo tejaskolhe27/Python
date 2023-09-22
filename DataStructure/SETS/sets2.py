@@ -12,7 +12,7 @@ print()
 print(sets.difference(sets2))
 print(sets-sets2)
 print()
-#DIFFERENCE_UPDATE
+#DIFFERENCE_UPDATE  a
 #print(sets.difference_update(sets2))
 
 #SYMMETRIC DIFFERENCE

@@ -43,7 +43,7 @@ class Student:
 lst=[]
 n=int(input("Enter No of students: "))
 for i in range(n):
-    obj="s"+str(i+1)
+    obj=str(i+1)
     obj=Student()
     obj.set_sname(input("Enter a Name:"))
     obj.set_m1(int(input("Enter a Marks1:")))
