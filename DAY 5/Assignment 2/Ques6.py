@@ -64,4 +64,4 @@ while ch!=8:
             print('The frozen set is: ', frozen_set)
         
         case 8: 
-            print("hank you!!!")
+            print("Thank you!!!")
