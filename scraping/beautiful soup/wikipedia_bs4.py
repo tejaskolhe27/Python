@@ -25,7 +25,7 @@ directedby=[]
 releasedata=[]
 for movie in movies:
     title.append(movie.a.text)
-    directed_by=director.get_text() for director in newdata.select("tr:contains('Directed by') a[href*='/wiki/']")
+    directed_by=director.get_text() for director in newdata.select("tr:string=re.compile('Directed by') a[href*='/wiki/']")
     directedby.append(directed_by)
 
 # for movie in movie_containers:
