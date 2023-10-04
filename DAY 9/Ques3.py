@@ -101,7 +101,7 @@ while ch=='y':
         case 4:
             hob=input("Enter Hobby: ")
             for s in lst:
-                m=re.search(hob, s.get_hobby())
+                m=re.search(hob, s.get_hobbies())
                 if m!=None:
                     print(s)
             

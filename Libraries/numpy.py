@@ -25,7 +25,7 @@ print("Data type: ",c.dtype)
 print("Dimensions: ",c.ndim)
 print("Shape: ", c.shape)
 
-from scipy import linalg as la
+from numpy import linalg as la
 m=np.array([[10,20],
             [30,40]])
 print(la.det(m))
